@@ -1,0 +1,14 @@
+@using GraphTutorial
+
+<ul class="nav navbar-nav">
+@if (User.Identity.IsAuthenticated)
+{
+    
+}
+else
+{
+    <li class="nav-item">
+        <a class="nav-link" asp-area="MicrosoftIdentity" asp-controller="Account" asp-action="SignIn">Sign in</a>
+    </li>
+}
+</ul>
